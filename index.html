@@ -6,38 +6,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
   <title>Live Preview Code</title>
+  <style>
+    .navy {
+      background: navy;
+      color: #fff;
+      ;
+    }
+
+    .teal {
+      background: teal;
+      color: #fff;
+      ;
+    }
+
+    .purple {
+      background: purple;
+      color: #fff;
+      ;
+    }
+  </style>
 </head>
 
-<body id="" class="bg-primary">
+<body class="">
   <div class="container">
     <div class="row">
       <div class="col-sm text-center pt-3">
-        <h1 class="text-white">Live Preview Code</h1>
+        <h1>Live Preview Code</h1>
       </div>
     </div>
     <div class="row">
       <div class="col-sm">
         <form>
           <div class="form-group pt-4">
-            <label for="input" class="text-white">Write some HTML code</label>
-            <div class="text-white">Input:</div>
+            <label for="input">Write some HTML code</label>
+            <div>Input:</div>
             <textarea class="form-control" id="input" rows="4"></textarea>
           </div>
         </form>
       </div>
     </div>
+    <div class="row">
+      <div class="col-sm">
+        <button type="button" class="btn-white text-primary btn-lg">
+          Random
+        </button>
+      </div>
+      <div class="row">
+        <div>
+          select your favorite theme:
+        </div>
+        <div class="col-sm">
+          <select class="custom-select custom-select-lg">
+            <option selected>Select theme</option>
+            <option value="navy">Navy</option>
+            <option value="teal">Teal</option>
+            <option value="purple">Purple</option>
+          </select>
+
+        </div>
+      </div>
+
+    </div>
     <div class="column">
-      <div class="text-white">Output:</div>
+      <div>Output:</div>
       <div class="col-sm bg-white">
         <div id="preview"></div>
       </div>
     </div>
   </div>
 
+
+  <footer class="text-center pt-5">
+    <h3>Created by Chris Spiliotis 2023</h3>
+  </footer>
   <script src="./app.js"></script>
 </body>
-<footer class="text-center text-white pt-5">
-  <h3>Created by Chris Spiliotis 2023</h3>
-</footer>
+
 
 </html>
